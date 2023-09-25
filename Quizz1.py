@@ -194,6 +194,7 @@ class Game:
 ## This functions checks if input is correct. For user_difficulty: Allowed are numbers 1,2 and 3;For user_topic: Allowed are "T","G" or "M"
 
 def check_user_difficulty(user_difficulty):
+    global player1_difficulty
     try:
         player1_difficulty=int(user_difficulty)
         if player1_difficulty !=1 and player1_difficulty !=2 and player1_difficulty!=3 :
